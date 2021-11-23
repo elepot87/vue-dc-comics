@@ -9,15 +9,6 @@
           <li v-for="(link, index) in navLinks" :key="`link-${index}`">
             <a :href="link.url">{{ link.text }}</a>
           </li>
-          <!-- <li><a href="/comics"></a>Comics</li>
-          <li><a href="/movies"></a>Movies</li>
-          <li><a href="/tv"></a>Tv</li>
-          <li><a href="/games"></a>Games</li>
-          <li><a href="/collectibles"></a>Collectibles</li>
-          <li><a href="/videos"></a>Videos</li>
-          <li><a href="/fans"></a>Fans</li>
-          <li><a href="/news"></a>News</li>
-          <li><a href="/shop"></a>Shop</li> -->
         </ul>
       </nav>
     </div>
