@@ -1,11 +1,11 @@
 <template>
   <footer class="footer">
-    <div class="footerone">
-      <nav class="nav-footer">
+    <div class="footerone container py-40">
+      <nav class="nav-footer flex">
         <!-- Colonna sx -->
         <div class="col-sx">
-          <h4>DC COMICS</h4>
-          <ul class="footer-col sx">
+          <h4 class="my-15">DC COMICS</h4>
+          <ul class="footer-col sx p-0 no-list-style">
             <li
               v-for="(link, index) in linksDcComics"
               :key="link - footer - `${index}`"
@@ -13,8 +13,8 @@
               <a :href="link.url">{{ link.text }}</a>
             </li>
           </ul>
-          <h4>SHOP</h4>
-          <ul class="footer-col sx">
+          <h4 class="mt-20 mb-15">SHOP</h4>
+          <ul class="footer-col sx p-0 no-list-style">
             <li
               v-for="(link, index) in shopDC"
               :key="link - footer - shop - `${index}`"
@@ -25,8 +25,8 @@
         </div>
         <!-- Colonna centrale -->
         <div class="col-center">
-          <h4>DC</h4>
-          <ul class="footer-col center">
+          <h4 class="my-15">DC</h4>
+          <ul class="footer-col center p-0 no-list-style">
             <li
               v-for="(link, index) in linkDC"
               :key="linkDC - footer - `${index}`"
@@ -37,8 +37,8 @@
         </div>
         <!-- Colonna dx -->
         <div class="col-dx">
-          <h4>SITES</h4>
-          <ul class="footer-col dx">
+          <h4 class="my-15">SITES</h4>
+          <ul class="footer-col dx p-0 no-list-style">
             <li
               v-for="(link, index) in sitesDC"
               :key="sitesDC - footer - `${index}`"
@@ -50,7 +50,7 @@
       </nav>
     </div>
     <div class="footer-social">
-      <div class="container-footer-social">social</div>
+      <div class="container py-20">social</div>
     </div>
   </footer>
 </template>
@@ -214,7 +214,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/globals";
+@import "@/styles/utilities";
 @import "@/styles/variables";
+
 .footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-position: center top;
@@ -226,25 +229,29 @@ export default {
   background-image: url("../assets/img/dc-logo-bg.png");
   background-position: right center;
   background-repeat: no-repeat;
-  margin: 0 auto;
-  padding: 40px 0;
-  width: 1170px;
 }
 
 .nav-footer {
   width: 50%;
-  display: flex;
+  h4 {
+    color: $white;
+  }
 }
 
 .col-sx,
 .col-center,
 .col-dx {
   width: calc(100% / 4);
-}
-
-.footer-col {
-  list-style: none;
-  padding: 0;
+  .footer-col {
+    & li {
+      & a {
+        color: $light-grey;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: $font-bold;
+      }
+    }
+  }
 }
 
 .footer-logo {
@@ -253,11 +260,5 @@ export default {
 
 .footer-social {
   background-color: $second-color;
-}
-
-.container-footer-social {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 20px 0;
 }
 </style>

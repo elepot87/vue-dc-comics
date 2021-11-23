@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-    <div class="container">
+    <div class="container flex flex-center">
       <h1>-->Content goes here</h1>
     </div>
   </div>
@@ -21,15 +21,13 @@ export default {
   background: $third-color;
   height: 100px;
   .container {
-    display: flex;
-    align-items: center;
     height: 100%;
     padding: 0;
   }
 }
 
 h1 {
-  color: white;
+  color: $white;
   font-size: 30px;
 }
 </style>

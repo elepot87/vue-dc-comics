@@ -13,7 +13,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/globals";
+@import "@/styles/utilities";
 @import "@/styles/variables";
+
 .features {
   background: $primary-color;
   height: 150px;
