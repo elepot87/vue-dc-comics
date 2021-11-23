@@ -3,6 +3,7 @@
     <Header />
     <Products />
     <Features />
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Header from "@/components/Header.vue";
 import Products from "@/components/Products.vue";
 import Features from "@/components/Features.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     Header,
     Products,
     Features,
+    Footer,
   },
 };
 </script>
