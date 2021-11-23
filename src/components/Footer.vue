@@ -50,7 +50,21 @@
       </nav>
     </div>
     <div class="footer-social">
-      <div class="container py-20">social</div>
+      <div class="container py-20 flex flex-center">
+        <!-- Col left -->
+        <div>
+          <button class="footer-cta">SIGN-UP NOW</button>
+        </div>
+        <!-- Col right -->
+        <div class="flex flex-center">
+          <span class="follow">FOLLOW US</span>
+          <img src="../assets/img/footer-facebook.png" alt="icona facebook" />
+          <img src="../assets/img/footer-twitter.png" alt="icona twitter" />
+          <img src="../assets/img/footer-youtube.png" alt="icona-youtube" />
+          <img src="../assets/img/footer-pinterest.png" alt="icona pinterest" />
+          <img src="../assets/img/footer-periscope.png" alt="icona periscope" />
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -233,7 +247,7 @@ export default {
       & a {
         color: $light-grey;
         text-decoration: none;
-        font-size: 12px;
+        font-size: $font-menu;
         font-weight: $font-bold;
       }
     }
@@ -246,5 +260,24 @@ export default {
 
 .footer-social {
   background-color: $second-color;
+  .footer-cta {
+    color: $white;
+    background-color: $second-color;
+    border: none;
+    border: 2px solid $primary-color;
+    padding: 10px 15px;
+    font-size: $font-footer;
+  }
+  .container {
+    .follow {
+      color: $primary-color;
+      font-size: $font-footer;
+      font-weight: $font-bold;
+      margin-right: 15px;
+    }
+    img {
+      margin: 0 10px;
+    }
+  }
 }
 </style>

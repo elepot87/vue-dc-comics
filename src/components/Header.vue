@@ -101,7 +101,7 @@ a {
       text-decoration: none;
       text-transform: $uppercase;
       font-weight: $font-bold;
-      font-size: 12px;
+      font-size: $font-menu;
       color: $second-color;
       &:hover {
         color: $primary-color;
