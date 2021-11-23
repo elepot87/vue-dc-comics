@@ -1,14 +1,57 @@
 <template>
   <footer class="footer">
-    <div>
-      <div class="footerone">
-        <nav class="nav-footer">
-          <!-- Colonna sx -->
-          <!-- Colonna centrale -->
-          <!-- Colonna dx -->
-        </nav>
-      </div>
-      <div class="footer-social">social</div>
+    <div class="footerone">
+      <nav class="nav-footer">
+        <!-- Colonna sx -->
+        <div class="col-sx">
+          <h4>DC COMICS</h4>
+          <ul class="footer-col sx">
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+          </ul>
+          <h4>SHOP</h4>
+          <ul class="footer-col sx">
+            <li>ciao</li>
+            <li>ciao</li>
+          </ul>
+        </div>
+        <!-- Colonna centrale -->
+        <div class="col-center">
+          <h4>DC</h4>
+          <ul class="footer-col center">
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+          </ul>
+        </div>
+        <!-- Colonna dx -->
+        <div class="col-dx">
+          <h4>SITES</h4>
+          <ul class="footer-col dx">
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+            <li>ciao</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-social">
+      <div class="container-footer-social">social</div>
     </div>
   </footer>
 </template>
@@ -25,10 +68,6 @@ export default {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  > div {
-    max-width: 1170px;
-    margin: 0 auto;
-  }
 }
 
 .footerone {
@@ -45,13 +84,28 @@ export default {
   display: flex;
 }
 
+.col-sx,
+.col-center,
+.col-dx {
+  width: calc(100% / 5);
+}
+
+.footer-col {
+  list-style: none;
+  padding: 0;
+}
+
 .footer-logo {
   width: 50%;
 }
 
 .footer-social {
   background-color: #303030;
-  margin-bottom: 0 auto;
+}
+
+.container-footer-social {
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 20px 0;
 }
 </style>
