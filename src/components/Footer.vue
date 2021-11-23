@@ -87,28 +87,13 @@ export default {
           current: false,
         },
         {
-          text: "Collectibles",
-          url: "/collectibles",
-          current: false,
-        },
-        {
           text: "Videos",
           url: "/videos",
           current: false,
         },
         {
-          text: "Fans",
-          url: "/fans",
-          current: false,
-        },
-        {
           text: "News",
           url: "/news",
-          current: false,
-        },
-        {
-          text: "Shop",
-          url: "/shop",
           current: false,
         },
       ],
@@ -244,6 +229,7 @@ export default {
   width: calc(100% / 4);
   .footer-col {
     & li {
+      margin: 3px 0;
       & a {
         color: $light-grey;
         text-decoration: none;
