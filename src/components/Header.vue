@@ -6,16 +6,18 @@
       </a>
       <nav class="nav-menu">
         <ul class="main-menu">
-          <li><a href="/"></a>Characters</li>
-          <li><a href="/comics"></a>Comics</li>
+          <li v-for="(link, index) in navLinks" :key="`link-${index}`">
+            <a :href="link.url">{{ link.text }}</a>
+          </li>
+          <!-- <li><a href="/comics"></a>Comics</li>
           <li><a href="/movies"></a>Movies</li>
           <li><a href="/tv"></a>Tv</li>
           <li><a href="/games"></a>Games</li>
-          <li><a href="/collectivbles"></a>Collectibles</li>
+          <li><a href="/collectibles"></a>Collectibles</li>
           <li><a href="/videos"></a>Videos</li>
           <li><a href="/fans"></a>Fans</li>
           <li><a href="/news"></a>News</li>
-          <li><a href="/shop"></a>Shop</li>
+          <li><a href="/shop"></a>Shop</li> -->
         </ul>
       </nav>
     </div>
@@ -25,6 +27,62 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      navLinks: [
+        {
+          text: "Characters",
+          url: "/characters",
+          current: true,
+        },
+        {
+          text: "Comics",
+          url: "/comics",
+          current: false,
+        },
+        {
+          text: "Movies",
+          url: "/movies",
+          current: false,
+        },
+        {
+          text: "Tv",
+          url: "/tv",
+          current: false,
+        },
+        {
+          text: "Games",
+          url: "/games",
+          current: false,
+        },
+        {
+          text: "Collectibles",
+          url: "/collectibles",
+          current: false,
+        },
+        {
+          text: "Videos",
+          url: "/videos",
+          current: false,
+        },
+        {
+          text: "Fans",
+          url: "/fans",
+          current: false,
+        },
+        {
+          text: "News",
+          url: "/news",
+          current: false,
+        },
+        {
+          text: "Shop",
+          url: "/shop",
+          current: false,
+        },
+      ],
+    };
+  },
 };
 </script>
 
