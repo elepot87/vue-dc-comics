@@ -13,8 +13,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/variables";
 .features {
-  background: #0282f9;
+  background: $primary-color;
   height: 150px;
 }
 </style>

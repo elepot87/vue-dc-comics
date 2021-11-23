@@ -214,6 +214,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/variables";
 .footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-position: center top;
@@ -251,7 +252,7 @@ export default {
 }
 
 .footer-social {
-  background-color: #303030;
+  background-color: $second-color;
 }
 
 .container-footer-social {
