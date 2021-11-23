@@ -7,15 +7,15 @@
       <nav class="nav-menu">
         <ul class="main-menu">
           <li><a href="/"></a>Characters</li>
-          <li><a href="#"></a>Comics</li>
-          <li><a href="#"></a>Movies</li>
-          <li><a href="#"></a>Tv</li>
-          <li><a href="#"></a>Games</li>
-          <li><a href="#"></a>Collectibles</li>
-          <li><a href="#"></a>Videos</li>
-          <li><a href="#"></a>Fans</li>
-          <li><a href="#"></a>News</li>
-          <li><a href="#"></a>Shop</li>
+          <li><a href="/comics"></a>Comics</li>
+          <li><a href="/movies"></a>Movies</li>
+          <li><a href="/tv"></a>Tv</li>
+          <li><a href="/games"></a>Games</li>
+          <li><a href="/collectivbles"></a>Collectibles</li>
+          <li><a href="/videos"></a>Videos</li>
+          <li><a href="/fans"></a>Fans</li>
+          <li><a href="/news"></a>News</li>
+          <li><a href="/shop"></a>Shop</li>
         </ul>
       </nav>
     </div>
