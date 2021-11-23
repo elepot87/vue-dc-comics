@@ -1,11 +1,11 @@
 <template>
   <header>
-    <div class="container">
+    <div class="container flex flex-center">
       <a href="#">
         <img src="../assets/img/dc-logo.png" alt="logo DC" />
       </a>
       <nav class="nav-menu">
-        <ul class="main-menu">
+        <ul class="main-menu flex no-list-style">
           <li v-for="(link, index) in navLinks" :key="`link-${index}`">
             <a :href="link.url">{{ link.text }}</a>
           </li>
@@ -78,17 +78,35 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@import "@/styles/globals";
+@import "@/styles/utilities";
+@import "@/styles/variables";
+
+a {
+  img {
+    max-width: 60px;
+  }
 }
 
 .main-menu {
-  list-style: none;
-  display: flex;
   li {
     margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    height: 100px;
+    line-height: 100px;
+    &:hover {
+      border-bottom: 3px solid $primary-color;
+    }
+    a {
+      text-decoration: none;
+      text-transform: $uppercase;
+      font-weight: $font-bold;
+      font-size: 12px;
+      color: $second-color;
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 }
 </style>

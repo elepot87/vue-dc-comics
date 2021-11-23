@@ -13,8 +13,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/globals";
+@import "@/styles/utilities";
+@import "@/styles/variables";
+
 .products {
-  background: #000;
+  background: $third-color;
   height: 100px;
   .container {
     display: flex;
