@@ -25,19 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#app {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 10px;
-}
+@import "@/styles/globals";
+@import "@/styles/utilities";
 </style>
