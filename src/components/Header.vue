@@ -30,9 +30,6 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
