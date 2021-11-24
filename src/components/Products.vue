@@ -6,12 +6,13 @@
       </div>
       <ul class="container-comics flex no-list-style">
         <li v-for="(comic, index) in comics" :key="`comics-${index}`">
-          <div>
+          <!-- <div>
             <img :src="comic.thumb" :alt="comic.series" />
             <div class="title-comics">
               {{ comic.series }}
             </div>
-          </div>
+          </div> -->
+          <Comics :url="comic.thumb" :title="comic.series" />
         </li>
       </ul>
     </div>
@@ -19,9 +20,13 @@
 </template>
 
 <script>
+import Comics from "@/components/Comics.vue";
+
 export default {
   name: "Product.vue",
-  components: {},
+  components: {
+    Comics,
+  },
   data() {
     return {
       comics: [

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <img :src="thumb" :alt="series" />
+    <img :src="url" :alt="title" />
     <div class="title-comics">
-      {{ series }}
+      {{ title }}
     </div>
   </div>
 </template>
@@ -11,8 +11,8 @@
 export default {
   name: "Comics",
   props: {
-    thumb: String,
-    series: String,
+    url: String,
+    title: String,
   },
 };
 </script>
