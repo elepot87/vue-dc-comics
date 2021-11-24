@@ -1,7 +1,9 @@
 <template>
   <div class="products">
-    <div class="container flex flex-center">
-      <h1>-->Content goes here</h1>
+    <div class="container">
+      <div class="title">
+        <h1 class="text-title">Current series</h1>
+      </div>
     </div>
   </div>
 </template>
