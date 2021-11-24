@@ -1,8 +1,7 @@
 .products {
   background: $third-color;
-  height: 100px;
+
   .container {
-    height: 100%;
     padding: 0;
   }
 }
@@ -20,4 +19,8 @@
     font-size: 30px;
     text-transform: uppercase;
   }
+}
+
+.container-comics {
+  flex-wrap: wrap;
 }
