@@ -16,18 +16,5 @@ export default {
 @import "@/styles/globals";
 @import "@/styles/utilities";
 @import "@/styles/variables";
-
-.products {
-  background: $third-color;
-  height: 100px;
-  .container {
-    height: 100%;
-    padding: 0;
-  }
-}
-
-h1 {
-  color: $white;
-  font-size: 30px;
-}
+@import "@/styles/products";
 </style>

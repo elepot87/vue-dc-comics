@@ -81,32 +81,5 @@ export default {
 @import "@/styles/globals";
 @import "@/styles/utilities";
 @import "@/styles/variables";
-
-a {
-  img {
-    max-width: 60px;
-  }
-}
-
-.main-menu {
-  li {
-    margin: 0 10px;
-    border-bottom: 3px solid transparent;
-    height: 100px;
-    line-height: 100px;
-    &:hover {
-      border-bottom: 3px solid $primary-color;
-    }
-    a {
-      text-decoration: none;
-      text-transform: $uppercase;
-      font-weight: $font-bold;
-      font-size: $font-menu;
-      color: $second-color;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
-}
+@import "@/styles/header";
 </style>
