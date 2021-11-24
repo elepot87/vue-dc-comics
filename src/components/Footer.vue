@@ -58,11 +58,19 @@
         <!-- Col right -->
         <div class="flex flex-center">
           <span class="follow">FOLLOW US</span>
-          <img src="../assets/img/footer-facebook.png" alt="icona facebook" />
-          <img src="../assets/img/footer-twitter.png" alt="icona twitter" />
-          <img src="../assets/img/footer-youtube.png" alt="icona-youtube" />
-          <img src="../assets/img/footer-pinterest.png" alt="icona pinterest" />
-          <img src="../assets/img/footer-periscope.png" alt="icona periscope" />
+          <div class="container-icon">
+            <img src="../assets/img/footer-facebook.png" alt="icona facebook" />
+            <img src="../assets/img/footer-twitter.png" alt="icona twitter" />
+            <img src="../assets/img/footer-youtube.png" alt="icona-youtube" />
+            <img
+              src="../assets/img/footer-pinterest.png"
+              alt="icona pinterest"
+            />
+            <img
+              src="../assets/img/footer-periscope.png"
+              alt="icona periscope"
+            />
+          </div>
         </div>
       </div>
     </div>
