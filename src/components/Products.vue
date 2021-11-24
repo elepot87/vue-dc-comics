@@ -1,6 +1,6 @@
 <template>
   <div class="products">
-    <div class="container">
+    <div class="container flex">
       <div class="title">
         <h1 class="text-title">Current series</h1>
       </div>
@@ -15,6 +15,7 @@
           <Comics :url="comic.thumb" :title="comic.series" />
         </li>
       </ul>
+      <button class="loader">Load more</button>
     </div>
   </div>
 </template>

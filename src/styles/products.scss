@@ -3,6 +3,21 @@
 
   .container {
     padding: 0;
+    flex-direction: column;
+  }
+
+  .loader {
+    color: $white;
+    background-color: $primary-color;
+    border: none;
+    text-transform: uppercase;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 40px 0 20px;
+    align-self: center;
   }
 }
 
@@ -24,6 +39,7 @@
 .container-comics {
   flex-wrap: wrap;
   li {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 30px);
+    margin: 50px 15px 0 15px;
   }
 }
