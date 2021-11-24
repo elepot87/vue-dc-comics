@@ -23,4 +23,7 @@
 
 .container-comics {
   flex-wrap: wrap;
+  li {
+    width: calc(100% / 6);
+  }
 }
