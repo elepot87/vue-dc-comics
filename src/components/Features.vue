@@ -1,10 +1,14 @@
 <template>
-  <div class="features">
+  <div class="features py-20">
     <div class="container">
       <ul class="list-features flex no-list-style">
-        <li v-for="(feature, index) in features" :key="`feature-${index}`">
+        <li
+          v-for="(feature, index) in features"
+          :key="`feature-${index}`"
+          class="flex"
+        >
           <img :src="feature.imgFeatures" :alt="feature.text" />
-          <span>feature.text</span>
+          <span>{{ feature.text }}</span>
         </li>
       </ul>
     </div>
@@ -50,6 +54,21 @@ export default {
 
 .features {
   background: $primary-color;
-  height: 150px;
+  // height: 150px;
+}
+.list-features {
+  li {
+    width: calc(100% / 5);
+    color: $white;
+    align-items: center;
+    span {
+      text-transform: uppercase;
+      font-size: $font-menu;
+    }
+    img {
+      margin-right: 15px;
+      width: 20%;
+    }
+  }
 }
 </style>
