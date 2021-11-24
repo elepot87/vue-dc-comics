@@ -48,27 +48,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/styles/variables";
 @import "@/styles/globals";
 @import "@/styles/utilities";
-@import "@/styles/variables";
-
-.features {
-  background: $primary-color;
-  // height: 150px;
-}
-.list-features {
-  li {
-    width: calc(100% / 5);
-    color: $white;
-    align-items: center;
-    span {
-      text-transform: uppercase;
-      font-size: $font-menu;
-    }
-    img {
-      margin-right: 15px;
-      width: 20%;
-    }
-  }
-}
+@import "@/styles/features";
 </style>
