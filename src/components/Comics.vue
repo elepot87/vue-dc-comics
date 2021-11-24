@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <img :src="url" :alt="title" />
+  <div class="card">
+    <div class="container-img">
+      <img :src="url" :alt="title" />
+    </div>
     <div class="title-comics">
       {{ title }}
     </div>
@@ -17,4 +19,6 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "@/styles/comics";
+</style>
