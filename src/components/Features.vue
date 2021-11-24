@@ -9,6 +9,33 @@
 <script>
 export default {
   name: "Features",
+  data() {
+    return {
+      features: [
+        {
+          imgFeatures: '../assets/img/buy-comics-digital-comics.png',
+          text: "Digital comics",
+        },
+        {
+          imgFeatures: '../assets/img/buy-comics-merchandise.png',
+          text: "DC Merchandise",
+        },
+        {
+          imgFeatures: '../assets/img/buy-comics-subscriptions.png',
+          text: "Subscription",
+        },
+        {
+          imgFeatures: '../assets/img/buy-comics-shop-locator.png',
+          text: "Comic shop locator",
+        },
+        {
+          imgFeatures: '../assets/img/buy-dc-power-visa.svg',
+          text: "DC Power Visa",
+        },
+
+      ],
+    },
+  }
 };
 </script>
 
