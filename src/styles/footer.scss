@@ -44,10 +44,10 @@
   .footer-cta {
     color: $white;
     background-color: $second-color;
-    border: none;
     border: 2px solid $primary-color;
     padding: 10px 15px;
     font-size: $font-footer;
+    line-height: $font-footer;
   }
   .container {
     .follow {
